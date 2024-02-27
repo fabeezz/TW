@@ -1,0 +1,49 @@
+body
+{
+    background-color: bisque;
+}
+title
+{
+    align-items: center;
+}
+nav
+{
+    background-color: rgb(175, 122, 87);
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    height: 25px;
+}
+
+footer
+{
+    background-color: rgb(80, 15, 193);
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    height: 25px;
+}
+
+div
+{
+    background-color: beige;
+    width: 15%;
+    height: 75%;
+    display: flex;
+    justify-content: center;
+}
+.csstudent
+{
+    font-style: italic;
+}
+
+table, th, td
+{
+    border: 1px solid;
+    background-color: lemonchiffon;
+}
+
+.alexandra
+{
+    background-color: pink;
+}
