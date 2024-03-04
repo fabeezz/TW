@@ -5,4 +5,18 @@ body{
 h1{
     color: antiquewhite;
     text-align: center;
+    font-size: 3rem;
+    text-shadow: 0 5px 15px rgba(0,0,0,0.75);
+}
+.menu{
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+}
+.first_menu{
+    box-shadow: 0 5px 15px rgba(0,0,0,0.75);
+    border-radius: 20px;
+    
+
+
 }
