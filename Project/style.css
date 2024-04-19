@@ -1,0 +1,254 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: x-large;
+    background: linear-gradient(270deg, #ff3232, #ff7100, #ffbf00, #ffec00);
+    background-size: 800% 800%;
+    animation: a 7s ease infinite;
+}
+
+@keyframes a {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+body {
+    background-color: hsl(0, 0%, 30%);
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    margin: 10px;
+
+}
+
+.navbar ul {
+    list-style-type: none;
+    background-color: hsl(0, 0%, 20%);
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    border-radius: 15px;
+    margin: 10px;
+}
+
+.navbar li {
+    float: left;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.navbar li a,
+.navbar .dropdown a {
+    color: hsl(0, 0%, 90%);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    padding: 20px;
+    display: block;
+    text-align: center;
+}
+
+.navbar li:hover a,
+.navbar .dropdown a:hover {
+    background-color: hsl(0, 0%, 25%);
+    border: 1.5px solid hsl(0, 0%, 100%);
+    color: hsl(0, 0%, 100%);
+    border-radius: 15px;
+}
+
+.dropdown {
+    display: inline-block;
+}
+
+.dropdown a {
+    color: hsl(0, 0%, 35%);
+    text-decoration: none;
+    padding: 20px;
+    display: block;
+    text-align: center;
+}
+
+.dropdown .content {
+    display: none;
+    background-color: hsl(0, 0%, 20%);
+    position: absolute;
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.7);
+}
+
+.dropdown:hover .content {
+    display: block;
+}
+
+main {
+    color: hsl(0, 0%, 95%);
+}
+
+.questions {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+@keyframes twirl {
+    95% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.infobox {
+    border: 2px solid white;
+    padding: 15px;
+    margin: 0 150px 30px 150px;
+    border-radius: 15px;
+    background-color: hsl(0, 0%, 20%);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    padding: 20px;
+    text-indent: 50px;
+}
+
+.infobox:hover {
+    background-color: hsl(0, 0%, 10%);
+}
+
+@media screen and (max-width: 1000px) {
+
+    .infobox {
+        margin: 0 30px 30px 30px;
+    }
+}
+
+
+table {
+    border-collapse: separate;
+    border-spacing: 2px;
+    border-radius: 15px;
+    margin: 20px auto 60px auto;
+    border: 2px solid rgb(255, 255, 255);
+    background-color: hsl(0, 0%, 20%);
+}
+
+#makeItTwirl {
+    animation: twirl 10s infinite ease-in-out;
+}
+
+table td,
+table {
+    text-align: center;
+    font-size: 115%;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.left-align {
+    text-align: left;
+}
+
+a {
+    text-decoration: none;
+    color: hsl(43, 100%, 50%);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: x-large;
+    background: linear-gradient(270deg, #ff3232, #ff7100, #ffbf00, #ffec00);
+    background-size: 800% 800%;
+    animation: a 7s ease infinite;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 95%;
+    padding: 15px;
+}
+
+.icons {
+    text-align: center;
+}
+
+.icons a {
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.fa-brands.fa-square-instagram.fa-3x {
+    color: hsl(0, 0%, 0%);
+}
+
+.fa-brands.fa-square-instagram.fa-3x:hover {
+    color: hsl(276, 51%, 60%);
+}
+
+.fa-brands.fa-square-github.fa-3x {
+    color: hsl(0, 0%, 0%);
+}
+
+.fa-brands.fa-square-github.fa-3x:hover {
+    color: hsl(240, 100%, 40%);
+}
+
+.fa-brands.fa-linkedin.fa-3x {
+    color: hsl(0, 0%, 0%);
+}
+
+.fa-brands.fa-linkedin.fa-3x:hover {
+    color: hsl(203, 100%, 78%);
+}
+
+.gallery {
+    display: inline-block;
+    border: 2px solid hsl(0, 0%, 60%);
+    margin: 5px;
+    width: 250px;
+}
+
+.gallery .description {
+    padding: 5px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.gallery:hover {
+    border: 2px solid hsl(0, 0%, 20%);
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+.gallery_align {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
