@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 header {
     display: flex;
     align-items: center;
@@ -240,6 +244,9 @@ footer {
 
 .gallery:hover {
     border: 2px solid hsl(0, 0%, 20%);
+    transition: all 0.2s ease;
+    transform: scale(1.05);
+    box-shadow: 3px 3px 10px hsla(0, 0%, 0%, 0.7);
 }
 
 .gallery img {
