@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include("../partials/head.ejs") %>
+    <title>PS2 Games</title>
+</head>
+
+<body>
+    <header>
+        <%- include("../partials/header.ejs") %>
+    </header>
+
+    <%- include("../partials/navbar.ejs") %>
+
+    <main>
+        <div class="gallery_align">
+            <div class="gallery">
+                <a href="downloads/nfsu2.zip" download="Need_for_Speed_Underground_2.zip">
+                    <img src="/resources/images/nfsu2.jpg" alt="nfsu2">
+                </a>
+                <div class="description">Need for Speed: Underground 2</div>
+            </div>
+
+            <div class="gallery">
+                <a href="downloads/gow2.zip" download="God_of_War_II.zip">
+                    <img src="/resources/images/gow2.jpg" alt="gow2">
+                </a>
+                <div class="description">God of War II</div>
+            </div>
+
+            <div class="gallery">
+                <a href="downloads/br.zip" download="Burnout_Revenge.zip">
+                    <img src="/resources/images/br.jpg" alt="br">
+                </a>
+                <div class="description">Burnout Revenge</div>
+            </div>
+
+            <div class="gallery">
+                <a href="downloads/cott.zip" download="Crash_of_the_Titans.zip">
+                    <img src="/resources/images/cott.jpg" alt="crash">
+                </a>
+                <div class="description">Crash of the Titans</div>
+            </div>
+        </div>
+        <table>
+            <tbody>
+                <tr>
+                    <td><a href="emulators.html">Emulators</a></td>
+                    <td id="left-align">How to download, setup and use the emulators.</td>
+                </tr>
+                <tr>
+                    <td><a href="vault.html">The Vault</a></td>
+                    <td id="left-align">Every game we got for the most popular systems.</td>
+                </tr>
+                <tr>
+                    <td><a href="contact.html">Contact</a></td>
+                    <td id="left-align">How can you keep in touch with us?</td>
+                </tr>
+                <tr>
+                    <td><a href="">Useful Links</a></td>
+                    <td id="left-align">Browse for more infomarition or FAQ.</td>
+                </tr>
+                <tr>
+                    <td><a href="https://paypal.com">Donate</a></td>
+                    <td id="left-align">Did you find our work useful? Buy us a banana :))</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <footer>
+        <%- include("../partials/footer.ejs") %>
+    </footer>
+
+</body>
+</html>
