@@ -1,0 +1,52 @@
+/* Media query pentru ecrane mai mari de 800px */
+@media (min-width: 801px) {
+    #container {
+        display: flex; /* Enables flexbox layout */
+        width: 500px;
+        height: 500px;
+        margin: 0 auto; /* Centers the container horizontally */
+        background-color: green;
+        border: 1px solid black;
+    }
+
+    .patrat {
+        flex: 1 0 20%; /* Each .patrat takes up 20% of the flex container width */
+        height: 100%; /* Each .patrat has a height equal to the container's height */
+    }
+
+    .patrat:nth-child(odd) {
+        border: 1px solid blue;
+    }
+
+    .patrat:nth-child(even) {
+        border: 1px solid red;
+    }
+}
+
+/* Media query pentru ecrane de 800px sau mai mici */
+@media (max-width: 800px) {
+    body {
+        animation: backgroundChange 1s infinite alternate; /* Applies the background color change animation */
+    }
+
+    #container {
+        display: flex; /* Ensures flexbox layout is still applied */
+        flex-direction: column; /* Stacks the .patrat divs vertically */
+        width: 50vw; /* Container width is 50% of the viewport width */
+        height: auto; /* Height adjusts to content */
+        background-color: transparent; /* Ensures background color does not obscure divs */
+        border: none; /* Removes border for a cleaner look */
+    }
+
+    .patrat {
+        width: 100%; /* Each .patrat takes up the full width of the container */
+        height: 100px; /* Sets a fixed height for visibility */
+        border: 1px solid black; /* Adds a border for visibility */
+    }
+}
+
+/* Keyframes for background color animation */
+@keyframes backgroundChange {
+    from { background-color: white; }
+    to { background-color: yellow;}
+}
