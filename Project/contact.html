@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TBA</title>
+    <title>Contact Us</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <script src="https://kit.fontawesome.com/676ceb1900.js" crossorigin="anonymous"></script>
@@ -36,41 +36,48 @@
     </nav>
 
     <main>
-        <h2 class="questions"">Who are we?</h2>
-        <p class=" infobox">
-            Welcome to the ultimate treasure trove of gaming history! We are RetroGame Vault! Dive into our
-            extensive archive filled
-            with classic titles, hidden gems, and beloved favorites spanning decades of gaming nostalgia. Explore
-            meticulously preserved games, immerse yourself in full-color manual scans, and uncover the stories behind
-            each pixelated masterpiece. Whether you're a seasoned gamer seeking a trip down memory lane or a curious
-            explorer venturing into uncharted territories, our vault has something special waiting for you. Start your
-            journey now and let the adventure begin!
-            </p>
+        <h2 class="questions">Contact Us</h2>
+        <p class="infobox">
+            We are RetroGame Vault, your gateway to gaming history! Explore our extensive archive of classic titles and hidden gems. Start your journey now and let the adventure begin!
+        </p>
 
-            <table>
-                <tbody>
-                    <tr>
-                        <td><a href="emulators.html">Emulators</a></td>
-                        <td id="left-align">How to download, setup and use the emulators.</td>
-                    </tr>
-                    <tr>
-                        <td><a href="vault.html">The Vault</a></td>
-                        <td id="left-align">Every game we got for the most popular systems.</td>
-                    </tr>
-                    <tr>
-                        <td><a href="contact.html">Contact</a></td>
-                        <td id="left-align">How can you keep in touch with us?</td>
-                    </tr>
-                    <tr>
-                        <td><a href="">Useful Links</a></td>
-                        <td id="left-align">Browse for more infomarition or FAQ.</td>
-                    </tr>
-                    <tr>
-                        <td><a href="https://paypal.com">Donate</a></td>
-                        <td id="left-align">Did you find our work useful? Buy us a banana :))</td>
-                    </tr>
-                </tbody>
-            </table>
+        <table>
+            <tbody>
+                <tr>
+                    <td><a href="emulators.html">Emulators</a></td>
+                    <td id="left-align">How to download, setup and use the emulators.</td>
+                </tr>
+                <tr>
+                    <td><a href="vault.html">The Vault</a></td>
+                    <td id="left-align">Every game we got for the most popular systems.</td>
+                </tr>
+                <tr>
+                    <td><a href="contact.html">Contact</a></td>
+                    <td id="left-align">How can you keep in touch with us?</td>
+                </tr>
+                <tr>
+                    <td><a href="">Useful Links</a></td>
+                    <td id="left-align">Browse for more information or FAQ.</td>
+                </tr>
+                <tr>
+                    <td><a href="https://paypal.com">Donate</a></td>
+                    <td id="left-align">Did you find our work useful? Buy us a banana :))</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <form id="contactForm" style="background-color: #2b2b2b; padding: 15px; border-radius: 8px; width: 80%; margin: auto;">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required style="margin-bottom: 10px; width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px;">
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required style="margin-bottom: 10px; width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px;">
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required style="margin-bottom: 10px; width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px;"></textarea>
+            
+            <button type="submit" style="background-color: #FFA500; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer; display: block; margin: 0 auto;">Send</button>
+        </form>
     </main>
 
     <footer>
@@ -86,6 +93,7 @@
             </a>
         </div>
     </footer>
+    <script src="app.js"></script>
 </body>
 
 </html>
