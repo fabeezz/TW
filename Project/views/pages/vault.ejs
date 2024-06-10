@@ -3,7 +3,7 @@
 
 <head>
     <%- include("../partials/head.ejs") %>
-    <title>Vault</title>
+        <title>Vault</title>
 </head>
 
 <body>
@@ -13,59 +13,37 @@
 
     <%- include("../partials/navbar.ejs") %>
 
-    <main>
-        <h2 class="questions">Chose your desired console!</h2>
-        <div class=" gallery_align">
-            <div class=" gallery">
-                <a target="" href="ps2.html"><img src="/resources/images/ps2.jpg" alt="ps2"></a>
-                <div class="description">PS2</div>
+        <main>
+            <h2 class="questions">Chose your desired console!</h2>
+            <div class=" gallery_align">
+                <div class=" gallery">
+                    <a target="" href="/ps2"><img src="/resources/images/ps2.jpg" alt="ps2"></a>
+                    <div class="description">PS2</div>
+                </div>
+
+                <div class="gallery">
+                    <a target="" href="/ps3"><img src="/resources/images/ps3.jpg" alt="ps3"></a>
+                    <div class="description">PS3</div>
+                </div>
+
+                <div class="gallery">
+                    <a target="" href="/xbox360"><img src="/resources/images/xbox360.jpg" alt="xbox360"></a>
+                    <div class="description">Xbox 360</div>
+                </div>
+
+                <div class="gallery">
+                    <a target="" href="/wii"><img src="/resources/images/wii.jpg" alt="wii"></a>
+                    <div class="description">Wii</div>
+                </div>
             </div>
 
-            <div class="gallery">
-                <a target="" href="ps3.html"><img src="/resources/images/ps3.jpg" alt="ps3"></a>
-                <div class="description">PS3</div>
-            </div>
+            <%- include("../partials/table.ejs") %>
+        </main>
 
-            <div class="gallery">
-                <a target="" href="xbox360.html"><img src="/resources/images/xbox360.jpg" alt="xbox360"></a>
-                <div class="description">Xbox 360</div>
-            </div>
-
-            <div class="gallery">
-                <a target="" href="wii.html"><img src="/resources/images/wii.jpg" alt="wii"></a>
-                <div class="description">Wii</div>
-            </div>
-            </div>
-
-            <table>
-                <tbody>
-                    <tr>
-                        <td><a href="emulators.html">Emulators</a></td>
-                        <td id="left-align">How to download, setup and use the emulators.</td>
-                    </tr>
-                    <tr>
-                        <td><a href="vault.html">The Vault</a></td>
-                        <td id="left-align">Every game we got for the most popular systems.</td>
-                    </tr>
-                    <tr>
-                        <td><a href="contact.html">Contact</a></td>
-                        <td id="left-align">How can you keep in touch with us?</td>
-                    </tr>
-                    <tr>
-                        <td><a href="">Useful Links</a></td>
-                        <td id="left-align">Browse for more infomarition or FAQ.</td>
-                    </tr>
-                    <tr>
-                        <td><a href="https://paypal.com">Donate</a></td>
-                        <td id="left-align">Did you find our work useful? Buy us a banana :))</td>
-                    </tr>
-                </tbody>
-            </table>
-    </main>
-
-    <footer>
-        <%- include("../partials/footer.ejs") %>
-    </footer>
+        <footer>
+            <%- include("../partials/footer.ejs") %>
+        </footer>
 
 </body>
+
 </html>

@@ -3,7 +3,7 @@
 
 <head>
     <%- include("../partials/head.ejs") %>
-    <title>XBOX360 Games</title>
+        <title>XBOX360 Games</title>
 </head>
 
 <body>
@@ -13,64 +13,42 @@
 
     <%- include("../partials/navbar.ejs") %>
 
-    <main>
-        <div class="gallery_align">
-            <div class="gallery">
-                <a href="downloads/fh1.zip" download="Forza_Horizon.zip">
-                    <img src="/resources/images/fh1.jpeg" alt="fh1">
-                </a>
-                <div class="description">Forza Horizon</div>
-            </div>
+        <main>
+            <div class="gallery_align">
+                <div class="gallery">
+                    <a href="downloads/fh1.zip" download="Forza_Horizon.zip">
+                        <img src="/resources/images/fh1.jpeg" alt="fh1">
+                    </a>
+                    <div class="description">Forza Horizon</div>
+                </div>
 
-            <div class="gallery">
-                <a href="downloads/halo3.zip" download="Halo_3.zip">
-                    <img src="/resources/images/halo3.jpg" alt="halo3">
-                </a>
-                <div class="description">Halo 3</div>
-            </div>
+                <div class="gallery">
+                    <a href="downloads/halo3.zip" download="Halo_3.zip">
+                        <img src="/resources/images/halo3.jpg" alt="halo3">
+                    </a>
+                    <div class="description">Halo 3</div>
+                </div>
 
-            <div class="gallery">
-                <a href="downloads/f2.zip" download="Fable_II.zip">
-                    <img src="/resources/images/f2.jpg" alt="fable2">
-                </a>
-                <div class="description">Fable II</div>
-            </div>
+                <div class="gallery">
+                    <a href="downloads/f2.zip" download="Fable_II.zip">
+                        <img src="/resources/images/f2.jpg" alt="fable2">
+                    </a>
+                    <div class="description">Fable II</div>
+                </div>
 
-            <div class="gallery">
-                <a href="downloads/bo2.zip" download="Call_of_Duty_BO2.zip">
-                    <img src="/resources/images/bo2.jpeg" alt="codbo2">
-                </a>
-                <div class="description">Call of Duty: BO2</div>
+                <div class="gallery">
+                    <a href="downloads/bo2.zip" download="Call_of_Duty_BO2.zip">
+                        <img src="/resources/images/bo2.jpeg" alt="codbo2">
+                    </a>
+                    <div class="description">Call of Duty: BO2</div>
+                </div>
             </div>
-        </div>
-        <table>
-            <tbody>
-                <tr>
-                    <td><a href="emulators.html">Emulators</a></td>
-                    <td id="left-align">How to download, setup and use the emulators.</td>
-                </tr>
-                <tr>
-                    <td><a href="vault.html">The Vault</a></td>
-                    <td id="left-align">Every game we got for the most popular systems.</td>
-                </tr>
-                <tr>
-                    <td><a href="contact.html">Contact</a></td>
-                    <td id="left-align">How can you keep in touch with us?</td>
-                </tr>
-                <tr>
-                    <td><a href="">Useful Links</a></td>
-                    <td id="left-align">Browse for more infomarition or FAQ.</td>
-                </tr>
-                <tr>
-                    <td><a href="https://paypal.com">Donate</a></td>
-                    <td id="left-align">Did you find our work useful? Buy us a banana :))</td>
-                </tr>
-            </tbody>
-        </table>
-    </main>
+            <%- include("../partials/table.ejs") %>
+        </main>
 
-    <footer>
-        <%- include("../partials/footer.ejs") %>
-    </footer>
+        <footer>
+            <%- include("../partials/footer.ejs") %>
+        </footer>
 </body>
+
 </html>
