@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     // Styling elements with class 'questions' using querySelectorAll and forEach
     document.querySelectorAll('.questions').forEach(item => {
         item.style.color = 'white';
@@ -28,12 +28,12 @@ document.addEventListener('DOMContentLoaded', function() {
     }, 5000);
 
     // Handling mouse events
-    document.querySelector('header').addEventListener('mouseover', function() {
+    document.querySelector('header').addEventListener('mouseover', function () {
         this.style.backgroundColor = 'lightgray';
     });
 
     // Modifying properties on key press
-    document.body.addEventListener('keydown', function(event) {
+    document.body.addEventListener('keydown', function (event) {
         const colorMap = {
             'b': { bg: 'blue', color: 'yellow' },
             'w': { bg: 'white', color: 'black' },
@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const validColors = ['b', 'w', 'r', 'g', 'o', 'p', 'y'];
     const colorRegex = new RegExp(`^[${validColors.join('')}]$`);
 
-    inputElement.addEventListener('input', function() {
+    inputElement.addEventListener('input', function () {
         if (colorRegex.test(this.value)) {
             console.log('Input changed to:', this.value);
             localStorage.setItem('userInput', this.value);
@@ -83,7 +83,7 @@ document.addEventListener('DOMContentLoaded', function() {
         console.log('Last input retrieved from localStorage:', lastInput);
     }
 
-    // Using methods from Math, Array, String, Date classes
+    // 
     console.log('Random number:', Math.random());
     console.log('Date:', new Date().toDateString());
     console.log('String manipulation:', 'Hello World'.toUpperCase());
@@ -98,13 +98,13 @@ document.addEventListener('DOMContentLoaded', function() {
     }, 1000);
 
     // Using classList, target, currentTarget properties
-    document.querySelector('footer').addEventListener('click', function(event) {
+    document.querySelector('footer').addEventListener('click', function (event) {
         event.currentTarget.classList.toggle('highlight');
         console.log('Event target:', event.target);
     });
 
     // Using getComputedStyle and stopPropagation methods
-    document.querySelector('nav').addEventListener('click', function(event) {
+    document.querySelector('nav').addEventListener('click', function (event) {
         event.stopPropagation();
         const navStyles = getComputedStyle(this);
         console.log('Nav computed height:', navStyles.height);
@@ -113,12 +113,12 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Validating form data using regular expressions
-    const validateInput = function(input) {
+    const validateInput = function (input) {
         const regex = /^[a-zA-Z0-9]+$/;
         return regex.test(input);
     };
 
-    inputElement.addEventListener('input', function() {
+    inputElement.addEventListener('input', function () {
         if (!validateInput(this.value)) {
             this.classList.add('invalid');
             console.log('Invalid input');
@@ -146,41 +146,41 @@ document.addEventListener('DOMContentLoaded', function() {
 
     updateDateTime();
     setInterval(updateDateTime, 1000);
-// Enhance form validation with specific regex checks for name, email, and message fields
-document.getElementById('contactForm').addEventListener('submit', function(event) {
-    event.preventDefault(); // Prevent the form from submitting until checks are passed
+    // Enhance form validation with specific regex checks for name, email, and message fields
+    document.getElementById('contactForm').addEventListener('submit', function (event) {
+        event.preventDefault(); // Prevent the form from submitting until checks are passed
 
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const message = document.getElementById('message').value;
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const message = document.getElementById('message').value;
 
-    // Regex for validating the name: Allow letters, spaces, and basic punctuation
-    const nameRegex = /^[a-zA-Z\s.,'-]+$/;
-    // Regex for validating the email: Standard email format
-    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-    // Regex for validating the message: Allow letters, numbers, spaces, and basic punctuation
-    const messageRegex = /^[a-zA-Z0-9\s.,'-?!]+$/;
+        //Allow letters, spaces, and basic punctuation
+        const nameRegex = /^[a-zA-Z\s.,'-]+$/;
+        ///Standard email format
+        const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+        //Allow letters, numbers, spaces, and basic punctuation
+        const messageRegex = /^[a-zA-Z0-9\s.,'-?!]+$/;
 
-    let valid = true;
-    let errorMessage = '';
+        let valid = true;
+        let errorMessage = '';
 
-    if (!nameRegex.test(name)) {
-        valid = false;
-        errorMessage += 'Name contains invalid characters. ';
-    }
-    if (!emailRegex.test(email)) {
-        valid = false;
-        errorMessage += 'Email format is invalid. ';
-    }
-    if (!messageRegex.test(message)) {
-        valid = false;
-        errorMessage += 'Message contains invalid characters.';
-    }
+        if (!nameRegex.test(name)) {
+            valid = false;
+            errorMessage += 'Name contains invalid characters. ';
+        }
+        if (!emailRegex.test(email)) {
+            valid = false;
+            errorMessage += 'Email format is invalid. ';
+        }
+        if (!messageRegex.test(message)) {
+            valid = false;
+            errorMessage += 'Message contains invalid characters.';
+        }
 
-    if (valid) {
-        this.submit(); // Submit the form if all validations are passed
-    } else {
-        alert('Form Error: ' + errorMessage);
-    }
-});
+        if (valid) {
+            this.submit(); // Submit the form if all validations are passed
+        } else {
+            alert('Form Error: ' + errorMessage);
+        }
+    });
 });
